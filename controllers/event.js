@@ -1,9 +1,9 @@
-const Race = require('../models/Race');  
+const Event = require('../models/Event');  
 
 exports.getAll = (req, res, next) => {
     try{
-        Race.find()
-            .then(races => res.status(200).json(races))
+        Event.find()
+            .then(events => res.status(200).json(events))
             .catch(error => res.status(404).json({ error : error.message }));
     } catch(error) {
         res.status(401).json({ error : error.message});
@@ -12,8 +12,8 @@ exports.getAll = (req, res, next) => {
 
 exports.get = (req, res, next) => {
     try{
-        Race.findOne({_id: req.params.id})
-            .then(race => res.status(200).json(race))
+        Event.findOne({_id: req.params.id})
+            .then(event => res.status(200).json(event))
             .catch(error => res.status(404).json({ error : error.message }));
     } catch(error) {
         res.status(401).json({ error : error.message});
@@ -22,11 +22,11 @@ exports.get = (req, res, next) => {
 
 exports.add = (req, res, next) => {
     try{
-        const race = new Race({
+        const event = new Event({
             ...req.body
         });
-        race.save()
-            .then(() => res.status(201).json(race))
+        event.save()
+            .then(() => res.status(201).json(event))
             .catch(error => res.status(404).json({ error : error.message }));
     } catch(error) {
         res.status(401).json({ error : error.message});
@@ -35,8 +35,8 @@ exports.add = (req, res, next) => {
 
 exports.update = (req, res, next) => {
     try{
-        Race.findOneAndUpdate({_id: req.params.id}, {...req.body, _id: req.params.id}, {new: true})
-            .then(race => res.status(200).json(race))
+        Event.findOneAndUpdate({_id: req.params.id}, {...req.body, _id: req.params.id}, {new: true})
+            .then(event => res.status(200).json(event))
             .catch(error => res.status(404).json({ error : error.message }));
     } catch(error) {
         res.status(401).json({ error : error.message});
@@ -45,7 +45,7 @@ exports.update = (req, res, next) => {
 
 exports.delete = (req, res, next) => {
     try{
-        Race.findOneAndDelete({_id: req.params.id})
+        Event.findOneAndDelete({_id: req.params.id})
             .then(() => res.status(204).end())
             .catch(error => res.status(404).json({error}));
     } catch(error) {

@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const env = require('./environment');
 const userRoutes = require('./routes/user');
 const raceRoutes = require('./routes/race');
+const eventRoutes = require('./routes/event');
 
 mongoose.connect(env.url,
   { useNewUrlParser: true,
@@ -23,5 +24,6 @@ app.use((req, res, next) => {
 
 app.use('/api/auth', userRoutes);
 app.use('/api/races', raceRoutes);
+app.use('/api/events', eventRoutes);
 
 module.exports = app;

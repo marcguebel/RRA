@@ -8,7 +8,6 @@ const eventSchema = mongoose.Schema({
     location : String,
     longitude : Number,
     latitude : Number,
-    country : String
 }, { versionKey: false });
 
 eventSchema.plugin(uniqueValidator);
