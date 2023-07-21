@@ -3,6 +3,9 @@ const router = express.Router();
 const eventCtrl = require('../controllers/event');
 const auth = require('../middleware/auth');
 
+router.get('/search', auth, eventCtrl.search);
+
+//crud
 router.get('/', auth, eventCtrl.getAll);
 router.get('/:id', auth, eventCtrl.get);
 router.post('/', auth, eventCtrl.add);
