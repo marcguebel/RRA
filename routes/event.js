@@ -3,11 +3,11 @@ const router = express.Router();
 const eventCtrl = require('../controllers/event');
 const auth = require('../middleware/auth');
 
-router.get('/search', auth, eventCtrl.search);
+router.get('/search', eventCtrl.search);
 
 //crud
-router.get('/', auth, eventCtrl.getAll);
-router.get('/:id', auth, eventCtrl.get);
+router.get('/', eventCtrl.getAll);
+router.get('/:id', eventCtrl.get);
 router.post('/', auth, eventCtrl.add);
 router.put('/:id', auth, eventCtrl.update);
 router.delete('/:id', auth, eventCtrl.delete);

@@ -69,12 +69,9 @@ exports.search = (req, res, next) => {
             filter.location = new RegExp(decodeURIComponent(cleanParameter(location)), 'i');
         }
  
-        res.json(filter);
-
         Event.find(filter)
              .then(events => res.status(200).json(events))
              .catch(error => res.status(404).json({ error : error.message }));
-         
     } catch(error) {
         res.status(401).json({ error : error.message});
     }
