@@ -565,7 +565,8 @@
 							{
 								"key": "Authorization",
 								"value": "Barer {{token}}",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -742,13 +743,13 @@
 	],
 	"variable": [
 		{
-			"id": "b57f080e-27e9-4e52-a874-cf86fdfbaa48",
+			"id": "1824541d-c90e-4028-9c36-8e80bacfe6d0",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f22cb2ab-a0ff-443f-be88-9128318a5b62",
+			"id": "8bfc0bb3-3e9f-4c13-8caf-227341d8e1df",
 			"key": "token",
 			"value": "",
 			"type": "string"
