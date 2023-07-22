@@ -686,7 +686,94 @@
 						},
 						"description": "Update one race"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "e6e5f2c6-5a14-45a8-8315-159b3be0b89b",
+							"name": "Update 🔒",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"event\" : \"64b963d34f13cd607fb56b1e\",\r\n    \"distance\" : \"10\",\r\n    \"elevationGain\" : 500,\r\n    \"type\" : \"trail\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}races/:id",
+									"host": [
+										"{{base_url}}races"
+									],
+									"path": [
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64bbae69f24bbf438b7c5ab6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-WbJ7DUjdA396dl9pJ1njBVjY8lg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:25:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"_id\": \"64bbae69f24bbf438b7c5ab6\",\n    \"event\": \"64b963d34f13cd607fb56b1e\",\n    \"distance\": 10,\n    \"elevationGain\": 500,\n    \"type\": [\n        \"trail\"\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete 🔒",
@@ -1441,13 +1528,13 @@
 	],
 	"variable": [
 		{
-			"id": "25d99bfc-1606-4cdf-b8ff-5ccecb7cb405",
+			"id": "77a11f7d-3e09-4f60-b443-7a69dbd3c02a",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "332d5e05-a235-4020-bf62-5374685820fb",
+			"id": "8566e25a-2c5b-4e96-9f12-b0927dd30730",
 			"key": "token",
 			"value": "",
 			"type": "string"
