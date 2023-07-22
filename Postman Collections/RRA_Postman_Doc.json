@@ -1,0 +1,762 @@
+{
+	"info": {
+		"_postman_id": "89636860-0ba7-446a-90cb-bb8aba73c6cc",
+		"name": "RRA",
+		"description": "# RRA : Race Run Api\n\nRRA is a public API to get information about the futur running event across europe\n\nRRA is a open source project.\n\n## Authentification\n\nAPI use JWT token.\n\nIf you want to call authentification endpoint, you need to call first :\n\n*   authentification/signup to register with a unique email, remember your email and your password.\n*   authentification/login with your email and your previous password to get a token **available 1 hour**.\n    \n\nWhen you have your token you can put it to variable 'token', this will use it every when needed.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentification 👩‍💻",
+			"item": [
+				{
+					"name": "Signup",
+					"_postman_id": "8dd3d1cd-549d-408d-97a0-f44e3b799d4b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"mail@demo.com\",\r\n    \"password\" : \"exemple\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}auth/signup",
+						"description": "Register on API, need a unique mail and a password."
+					},
+					"response": [
+						{
+							"id": "4549660e-23d2-473d-80c5-b40d6b9dd573",
+							"name": "Signup",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"mail@demo.com\",\r\n    \"password\" : \"exemple\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}auth/signup"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "76"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"4c-j8pnER0mnhoZIBFpdx0WmExaHv4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jul 2023 08:16:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"msg\": \"User created !\",\n    \"appId\": \"YOUR_APP_ID\",\n    \"appSecret\": \"YOUR_APP_SECRET\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"_postman_id": "84ed14a6-f9fa-499e-ad5f-3063ffb9584a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"mail@demo.com\",\r\n    \"password\" : \"exemple\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}auth/login",
+						"description": "Use to get a token after call /signup"
+					},
+					"response": [
+						{
+							"id": "ea2793e0-64d0-468e-b184-0a561f060495",
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\" : \"mail@demo.com\",\r\n    \"password\" : \"exemple\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}auth/login"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e0-RFq+OXPDHgEWHPc8Zl87BIt8J4M\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jul 2023 08:17:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"userId\": \"64b255e0d48ad28230253f97\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIyNTVlMGQ0OGFkMjgyMzAyNTNmOTciLCJpYXQiOjE2ODk0MDkwNTAsImV4cCI6MTY4OTQ5NTQ1MH0.zFeMB0np_aXXLnxB18zpFMdOgPg9LkMr9bA_FB3vcJs\"\n}"
+						}
+					]
+				}
+			],
+			"_postman_id": "29855371-a074-4444-a9bf-35deb6806f18",
+			"description": "Use to get acces to API"
+		},
+		{
+			"name": "Hello Wolrd ✋",
+			"item": [
+				{
+					"name": "Hello World",
+					"_postman_id": "668c3cd2-b938-4638-ba6f-a51a0e3cb3a8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}auth/hello",
+						"description": "Try if API is ok"
+					},
+					"response": [
+						{
+							"id": "b8eb90da-536c-4dc3-a2de-4b350632d55f",
+							"name": "Hello World",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}auth/hello"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jul 2023 08:19:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "13"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "Hello World !"
+						}
+					]
+				},
+				{
+					"name": "Hello World Authentified🔒",
+					"_postman_id": "e72ebbd8-530d-40cb-86e5-1adec4ad1457",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}auth/helloAuthentified",
+						"description": "Try if API is ok with authentification"
+					},
+					"response": [
+						{
+							"id": "540557a5-7371-4a61-983a-b3c2d80689b5",
+							"name": "Hello World Authentified",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": "{{base_url}}auth/helloAuthentified"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 15 Jul 2023 08:20:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "Hello World, you are authentified !"
+						}
+					]
+				}
+			],
+			"_postman_id": "f1209f10-f47f-4c8f-9485-bfe32579671b",
+			"description": "Simple first test"
+		},
+		{
+			"name": "Race 🏃‍♂️",
+			"item": [
+				{
+					"name": "Add 🔒",
+					"_postman_id": "9dd5565c-6d26-404d-93c6-dc891331f3da",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"event\" : \"64b963d34f13cd607fb56b1e\",\r\n    \"distance\" : \"10\",\r\n    \"elevationGain\" : 400,\r\n    \"type\" : \"trail\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}races/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"_postman_id": "6145caf3-3d0b-43fc-b94a-869f03106fb2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": "{{base_url}}races/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"_postman_id": "93fbf040-24e4-45c6-b252-0c47491c4594",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}races/:id",
+							"host": [
+								"{{base_url}}races"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64b964064f13cd607fb56b23",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update 🔒",
+					"_postman_id": "8b7475a9-e012-4c3a-9410-ae5d433f031a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"event\" : \"64b963d34f13cd607fb56b1e\",\r\n    \"distance\" : \"10\",\r\n    \"elevationGain\" : 500,\r\n    \"type\" : \"trail\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}races/:id",
+							"host": [
+								"{{base_url}}races"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64b964064f13cd607fb56b23",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete 🔒",
+					"_postman_id": "a84620e6-2405-43a4-b5e0-24f33ca5eb13",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}races/:id",
+							"host": [
+								"{{base_url}}races"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64b964064f13cd607fb56b23",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "2d7048cd-ffeb-4ab2-a7ed-31050a28cfad"
+		},
+		{
+			"name": "Event",
+			"item": [
+				{
+					"name": "Add",
+					"_postman_id": "34f1a418-8e5e-4584-8b26-f992570bb8ac",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"name exemple\",\r\n    \"date\" : \"2023-01-01 10:00:00\",\r\n    \"country\" : \"fr\",\r\n    \"location\" : \"Nancy\",\r\n    \"longitude\" : 0,\r\n    \"latitude\" : 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}events/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"_postman_id": "a27c11eb-cc02-450b-9ccf-d134b7ec519b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}events/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get One",
+					"_postman_id": "183e0081-d0b2-4df4-8b8b-11286109ce74",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}events/:id",
+							"host": [
+								"{{base_url}}events"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64b962c7cd442a75e5d0b3a0",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"_postman_id": "7e768c7e-7175-4de9-aced-3f00536d4de1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"name exemple\",\r\n    \"date\" : \"2023-01-01 10:00:00\",\r\n    \"country\" : \"fr\",\r\n    \"location\" : \"Nancy\",\r\n    \"longitude\" : 48.6921316006519,\r\n    \"latitude\" : 6.1848328787810445\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}events/:id",
+							"host": [
+								"{{base_url}}events"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64b963d34f13cd607fb56b1e",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"_postman_id": "b3d4355c-af2c-4166-b195-a8bbdbcbfc58",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}events/:id",
+							"host": [
+								"{{base_url}}events"
+							],
+							"path": [
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "64b963d34f13cd607fb56b1e",
+									"type": "string"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"_postman_id": "0c617997-7b9d-402e-8f53-9e2efdad76f1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Barer {{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}events/search?name=`name Exemp`&country='fr'&location=nancy",
+							"host": [
+								"{{base_url}}events"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "`name Exemp`"
+								},
+								{
+									"key": "date",
+									"value": "2023-01-01T09:00:00.000Z",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "'fr'"
+								},
+								{
+									"key": "location",
+									"value": "nancy"
+								},
+								{
+									"key": "longitude",
+									"value": "0",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"_postman_id": "efcd51f9-e490-4d9a-9275-8705149b06cb"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "1d6cb289-2b59-4506-b4cb-4c201d6a4d34",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e7c0a595-a848-4a5d-8d1b-f68489f3fff4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "b5a2394f-43b3-45ad-aa80-20b664fc07c7",
+			"key": "base_url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "a7ff5fc5-da26-465e-8fa9-77ac3758a53d",
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
