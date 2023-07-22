@@ -852,8 +852,7 @@
 									"value": "64bbaaebbebc8ceec5617a0f"
 								}
 							]
-						},
-						"description": "Update one event"
+						}
 					},
 					"response": [
 						{
@@ -970,11 +969,10 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64bbaaebbebc8ceec5617a0f"
+									"value": "64bad319d9162cca563a4cdb"
 								}
 							]
-						},
-						"description": "Delete one event"
+						}
 					},
 					"response": []
 				},
@@ -1027,8 +1025,7 @@
 									"disabled": true
 								}
 							]
-						},
-						"description": "Search event by name country or location"
+						}
 					},
 					"response": []
 				}
@@ -1060,13 +1057,13 @@
 	],
 	"variable": [
 		{
-			"id": "5d372708-523f-4ee6-b660-cf769b868698",
+			"id": "7c227a6a-bf8e-411c-aca4-6e323052ae1b",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "106f256d-0a00-48fd-8c96-0c3668f05b0a",
+			"id": "32437d71-25f9-4b8e-b5d0-efd2207382b4",
 			"key": "token",
 			"value": "",
 			"type": "string"
