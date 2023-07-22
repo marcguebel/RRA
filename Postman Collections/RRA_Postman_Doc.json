@@ -630,7 +630,8 @@
 								"disabled": true
 							}
 						],
-						"url": "{{base_url}}events/"
+						"url": "{{base_url}}events/",
+						"description": "Return all events"
 					},
 					"response": [
 						{
@@ -1055,13 +1056,13 @@
 	],
 	"variable": [
 		{
-			"id": "e9e7cd81-41e2-460c-87cb-f0cc7de8c278",
+			"id": "20b6b235-d757-4fa2-a2df-7531aff057e6",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "dc9db9ed-f965-4495-8c61-907ea80d317e",
+			"id": "12e70e97-fe8b-43b5-97b0-7dc2514207f4",
 			"key": "token",
 			"value": "",
 			"type": "string"
