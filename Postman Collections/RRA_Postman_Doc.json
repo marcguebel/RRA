@@ -1567,7 +1567,8 @@
 					]
 				}
 			],
-			"id": "efcd51f9-e490-4d9a-9275-8705149b06cb"
+			"id": "efcd51f9-e490-4d9a-9275-8705149b06cb",
+			"description": "Crud for event"
 		}
 	],
 	"event": [
@@ -1594,13 +1595,13 @@
 	],
 	"variable": [
 		{
-			"id": "028c59b5-f402-4d7d-a0fa-2cef75168295",
+			"id": "2ccba7e5-a327-496b-9644-d8579f87b6ff",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9c934b1e-8a4f-4576-9041-dfe17cf45493",
+			"id": "22f3bcf9-6bba-4979-9948-da360cd0efad",
 			"key": "token",
 			"value": "",
 			"type": "string"
