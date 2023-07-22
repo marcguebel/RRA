@@ -852,7 +852,8 @@
 									"value": "64bbaaebbebc8ceec5617a0f"
 								}
 							]
-						}
+						},
+						"description": "Update one event"
 					},
 					"response": [
 						{
@@ -1057,13 +1058,13 @@
 	],
 	"variable": [
 		{
-			"id": "279209e3-da72-4b47-8ba0-d2ae210f79dc",
+			"id": "a76ce2aa-a5f9-46f2-b6ba-ea98a2e04c2a",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f826330-76bf-4359-80ef-bc539734ca4c",
+			"id": "75dc6451-65d1-4a15-a915-3f6bc25ee602",
 			"key": "token",
 			"value": "",
 			"type": "string"
