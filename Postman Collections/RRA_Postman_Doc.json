@@ -3,7 +3,8 @@
 		"_postman_id": "89636860-0ba7-446a-90cb-bb8aba73c6cc",
 		"name": "RRA",
 		"description": "# RRA : Race Run Api\n\nRRA is a public API to get information about the futur running event across europe\n\nRRA is a open source project.\n\n## Authentification\n\nAPI use JWT token.\n\nIf you want to call authentification endpoint, you need to call first :\n\n*   authentification/signup to register with a unique email, remember your email and your password.\n*   authentification/login with your email and your previous password to get a token **available 1 hour**.\n    \n\nWhen you have your token you can put it to variable 'token', this will use it every when needed.",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "6918934"
 	},
 	"item": [
 		{
@@ -11,10 +12,6 @@
 			"item": [
 				{
 					"name": "Signup",
-					"id": "8dd3d1cd-549d-408d-97a0-f44e3b799d4b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -32,7 +29,6 @@
 					},
 					"response": [
 						{
-							"id": "4549660e-23d2-473d-80c5-b40d6b9dd573",
 							"name": "Signup",
 							"originalRequest": {
 								"method": "POST",
@@ -46,7 +42,7 @@
 										}
 									}
 								},
-								"url": "{{base_url}}auth/signup"
+								"url": "auth/signup"
 							},
 							"status": "Created",
 							"code": 201,
@@ -94,17 +90,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "{\n    \"msg\": \"User created !\",\n    \"appId\": \"YOUR_APP_ID\",\n    \"appSecret\": \"YOUR_APP_SECRET\"\n}"
 						}
 					]
 				},
 				{
 					"name": "Login",
-					"id": "84ed14a6-f9fa-499e-ad5f-3063ffb9584a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -122,7 +113,6 @@
 					},
 					"response": [
 						{
-							"id": "ea2793e0-64d0-468e-b184-0a561f060495",
 							"name": "Login",
 							"originalRequest": {
 								"method": "POST",
@@ -184,13 +174,11 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "{\n    \"userId\": \"64b255e0d48ad28230253f97\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGIyNTVlMGQ0OGFkMjgyMzAyNTNmOTciLCJpYXQiOjE2ODk0MDkwNTAsImV4cCI6MTY4OTQ5NTQ1MH0.zFeMB0np_aXXLnxB18zpFMdOgPg9LkMr9bA_FB3vcJs\"\n}"
 						}
 					]
 				}
 			],
-			"id": "29855371-a074-4444-a9bf-35deb6806f18",
 			"description": "Use to get acces to API"
 		},
 		{
@@ -198,10 +186,6 @@
 			"item": [
 				{
 					"name": "Hello World",
-					"id": "668c3cd2-b938-4638-ba6f-a51a0e3cb3a8",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -210,7 +194,6 @@
 					},
 					"response": [
 						{
-							"id": "b8eb90da-536c-4dc3-a2de-4b350632d55f",
 							"name": "Hello World",
 							"originalRequest": {
 								"method": "GET",
@@ -255,17 +238,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "Hello World !"
 						}
 					]
 				},
 				{
 					"name": "Hello World Authentified🔒",
-					"id": "e72ebbd8-530d-40cb-86e5-1adec4ad1457",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [
@@ -280,7 +258,6 @@
 					},
 					"response": [
 						{
-							"id": "540557a5-7371-4a61-983a-b3c2d80689b5",
 							"name": "Hello World Authentified",
 							"originalRequest": {
 								"method": "GET",
@@ -331,13 +308,11 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "Hello World, you are authentified !"
 						}
 					]
 				}
 			],
-			"id": "f1209f10-f47f-4c8f-9485-bfe32579671b",
 			"description": "Simple first test"
 		},
 		{
@@ -345,10 +320,6 @@
 			"item": [
 				{
 					"name": "Add 🔒",
-					"id": "9dd5565c-6d26-404d-93c6-dc891331f3da",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "POST",
 						"header": [
@@ -372,7 +343,6 @@
 					},
 					"response": [
 						{
-							"id": "b3aac2ad-2a42-424d-be5b-ed4be6e38608",
 							"name": "Add 🔒",
 							"originalRequest": {
 								"method": "POST",
@@ -440,17 +410,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "{\n    \"event\": \"64b963d34f13cd607fb56b1e\",\n    \"distance\": 10,\n    \"elevationGain\": 400,\n    \"type\": [\n        \"trail\"\n    ],\n    \"_id\": \"64bbae69f24bbf438b7c5ab6\"\n}"
 						}
 					]
 				},
 				{
 					"name": "Get All",
-					"id": "6145caf3-3d0b-43fc-b94a-869f03106fb2",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [
@@ -466,7 +431,6 @@
 					},
 					"response": [
 						{
-							"id": "8a1e3183-305a-4002-bffa-fbd56ab1e211",
 							"name": "Get All",
 							"originalRequest": {
 								"method": "GET",
@@ -526,17 +490,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "[\n    {\n        \"_id\": \"64bbae69f24bbf438b7c5ab6\",\n        \"event\": \"64b963d34f13cd607fb56b1e\",\n        \"distance\": 10,\n        \"elevationGain\": 400,\n        \"type\": [\n            \"trail\"\n        ]\n    }\n]"
 						}
 					]
 				},
 				{
 					"name": "Get One",
-					"id": "93fbf040-24e4-45c6-b252-0c47491c4594",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [
@@ -566,7 +525,6 @@
 					},
 					"response": [
 						{
-							"id": "9a991bf4-8106-47eb-8adc-ef9bf6434ed4",
 							"name": "Get One",
 							"originalRequest": {
 								"method": "GET",
@@ -640,17 +598,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "{\n    \"_id\": \"64bbae69f24bbf438b7c5ab6\",\n    \"event\": \"64b963d34f13cd607fb56b1e\",\n    \"distance\": 10,\n    \"elevationGain\": 400,\n    \"type\": [\n        \"trail\"\n    ]\n}"
 						}
 					]
 				},
 				{
 					"name": "Update 🔒",
-					"id": "8b7475a9-e012-4c3a-9410-ae5d433f031a",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -688,7 +641,6 @@
 					},
 					"response": [
 						{
-							"id": "e6e5f2c6-5a14-45a8-8315-159b3be0b89b",
 							"name": "Update 🔒",
 							"originalRequest": {
 								"method": "PUT",
@@ -770,17 +722,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "{\n    \"_id\": \"64bbae69f24bbf438b7c5ab6\",\n    \"event\": \"64b963d34f13cd607fb56b1e\",\n    \"distance\": 10,\n    \"elevationGain\": 500,\n    \"type\": [\n        \"trail\"\n    ]\n}"
 						}
 					]
 				},
 				{
 					"name": "Delete 🔒",
-					"id": "a84620e6-2405-43a4-b5e0-24f33ca5eb13",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -809,7 +756,6 @@
 					},
 					"response": [
 						{
-							"id": "0990794d-9497-4198-868e-07fee30de08f",
 							"name": "Delete 🔒",
 							"originalRequest": {
 								"method": "DELETE",
@@ -870,13 +816,11 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": null
 						}
 					]
 				}
 			],
-			"id": "2d7048cd-ffeb-4ab2-a7ed-31050a28cfad",
 			"description": "CRUD for race\n\nA Event can have multiples Races"
 		},
 		{
@@ -884,10 +828,6 @@
 			"item": [
 				{
 					"name": "Add 🔒",
-					"id": "34f1a418-8e5e-4584-8b26-f992570bb8ac",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "POST",
 						"header": [
@@ -911,7 +851,6 @@
 					},
 					"response": [
 						{
-							"id": "e18481b4-ca20-4220-9542-ba600a169039",
 							"name": "Add 🔒",
 							"originalRequest": {
 								"method": "POST",
@@ -979,17 +918,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "{\n    \"name\": \"name exemple\",\n    \"date\": \"2023-01-01T09:00:00.000Z\",\n    \"country\": \"fr\",\n    \"location\": \"Nancy\",\n    \"longitude\": 0,\n    \"latitude\": 0,\n    \"_id\": \"64bbaaebbebc8ceec5617a0f\"\n}"
 						}
 					]
 				},
 				{
 					"name": "Get All",
-					"id": "a27c11eb-cc02-450b-9ccf-d134b7ec519b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1005,7 +939,6 @@
 					},
 					"response": [
 						{
-							"id": "ca4bb518-cab7-4956-a032-3f1fb3e2460c",
 							"name": "Get All",
 							"originalRequest": {
 								"method": "GET",
@@ -1065,17 +998,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "[\n    {\n        \"_id\": \"64bbaaebbebc8ceec5617a0f\",\n        \"name\": \"name exemple\",\n        \"date\": \"2023-01-01T09:00:00.000Z\",\n        \"country\": \"fr\",\n        \"location\": \"Nancy\",\n        \"longitude\": 0,\n        \"latitude\": 0\n    }\n]"
 						}
 					]
 				},
 				{
 					"name": "Get One",
-					"id": "183e0081-d0b2-4df4-8b8b-11286109ce74",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1105,7 +1033,6 @@
 					},
 					"response": [
 						{
-							"id": "38b65e77-1bb6-4dbe-bc62-0e2d24f5fa9f",
 							"name": "Get One",
 							"originalRequest": {
 								"method": "GET",
@@ -1179,17 +1106,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "{\n    \"_id\": \"64bbaaebbebc8ceec5617a0f\",\n    \"name\": \"name exemple\",\n    \"date\": \"2023-01-01T09:00:00.000Z\",\n    \"country\": \"fr\",\n    \"location\": \"Nancy\",\n    \"longitude\": 0,\n    \"latitude\": 0\n}"
 						}
 					]
 				},
 				{
 					"name": "Update 🔒",
-					"id": "7e768c7e-7175-4de9-aced-3f00536d4de1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -1227,7 +1149,6 @@
 					},
 					"response": [
 						{
-							"id": "d2c9ac9e-3065-4fc7-bf4e-aff91ca646f4",
 							"name": "Update 🔒",
 							"originalRequest": {
 								"method": "PUT",
@@ -1309,17 +1230,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "{\n    \"_id\": \"64bbaaebbebc8ceec5617a0f\",\n    \"name\": \"name exemple updated\",\n    \"date\": \"2023-01-01T09:00:00.000Z\",\n    \"country\": \"fr\",\n    \"location\": \"Nancy\",\n    \"longitude\": 48.6921316006519,\n    \"latitude\": 6.1848328787810445\n}"
 						}
 					]
 				},
 				{
 					"name": "Delete 🔒",
-					"id": "b3d4355c-af2c-4166-b195-a8bbdbcbfc58",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -1348,7 +1264,6 @@
 					},
 					"response": [
 						{
-							"id": "f0955dec-8dd3-4e4f-9ef8-161777fbb799",
 							"name": "Delete 🔒",
 							"originalRequest": {
 								"method": "DELETE",
@@ -1409,17 +1324,12 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": null
 						}
 					]
 				},
 				{
 					"name": "Search",
-					"id": "0c617997-7b9d-402e-8f53-9e2efdad76f1",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1459,7 +1369,6 @@
 								{
 									"key": "longitude",
 									"value": "0",
-									"type": "text",
 									"disabled": true
 								}
 							]
@@ -1468,7 +1377,6 @@
 					},
 					"response": [
 						{
-							"id": "3e106d75-43b8-4888-8b81-1e38a1d8835d",
 							"name": "Search",
 							"originalRequest": {
 								"method": "GET",
@@ -1509,7 +1417,6 @@
 										{
 											"key": "longitude",
 											"value": "0",
-											"type": "text",
 											"disabled": true
 										}
 									]
@@ -1561,21 +1468,18 @@
 								}
 							],
 							"cookie": [],
-							"responseTime": null,
 							"body": "[\n    {\n        \"_id\": \"64bbadfdf1472ab992b1868d\",\n        \"name\": \"name exemple\",\n        \"date\": \"2023-01-01T09:00:00.000Z\",\n        \"country\": \"fr\",\n        \"location\": \"Nancy\",\n        \"longitude\": 0,\n        \"latitude\": 0\n    }\n]"
 						}
 					]
 				}
 			],
-			"id": "efcd51f9-e490-4d9a-9275-8705149b06cb",
-			"description": "Crud for event"
+			"description": "Crud for event\n\nA Event can have multiples Races"
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1d6cb289-2b59-4506-b4cb-4c201d6a4d34",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1585,7 +1489,6 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e7c0a595-a848-4a5d-8d1b-f68489f3fff4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1595,13 +1498,11 @@
 	],
 	"variable": [
 		{
-			"id": "df782efa-c5b0-494b-a0dc-d91d1c0a2177",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5c7acaf5-345f-45c0-a294-dc3ab706b6b7",
 			"key": "token",
 			"value": "",
 			"type": "string"
