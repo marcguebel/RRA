@@ -587,7 +587,7 @@
 					"response": []
 				},
 				{
-					"name": "Update",
+					"name": "Update 🔒",
 					"id": "7e768c7e-7175-4de9-aced-3f00536d4de1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -741,13 +741,13 @@
 	],
 	"variable": [
 		{
-			"id": "40e64a52-5f50-4f3c-a1c7-a3a2cf18f97b",
+			"id": "e411b5b1-8d74-4af8-b363-0794485ce345",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "13737ded-8e0d-4c3d-adfb-50fc56e4a874",
+			"id": "d0c48858-feaf-48d5-909f-f0fa1abead74",
 			"key": "token",
 			"value": "",
 			"type": "string"
