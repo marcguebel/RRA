@@ -500,7 +500,8 @@
 									"value": "64b964064f13cd607fb56b23"
 								}
 							]
-						}
+						},
+						"description": "Delete one race"
 					},
 					"response": []
 				}
@@ -1053,13 +1054,13 @@
 	],
 	"variable": [
 		{
-			"id": "16288299-497f-46fc-9558-91edd22f5fbb",
+			"id": "02466602-4b35-4d0e-926d-233bf4e8727c",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "59a7f813-7796-4a4a-88ef-f37d9a5df502",
+			"id": "63c9edf4-98ee-456e-921f-4d737c629d93",
 			"key": "token",
 			"value": "",
 			"type": "string"
