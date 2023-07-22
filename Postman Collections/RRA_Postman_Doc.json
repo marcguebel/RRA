@@ -680,7 +680,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b964064f13cd607fb56b23"
+									"value": "64bbae69f24bbf438b7c5ab6"
 								}
 							]
 						},
@@ -1441,13 +1441,13 @@
 	],
 	"variable": [
 		{
-			"id": "d4c4e3ad-ddc1-4091-9b39-02e233736c47",
+			"id": "25d99bfc-1606-4cdf-b8ff-5ccecb7cb405",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a40fccfa-63a2-4d47-8ab5-89ef386b8623",
+			"id": "332d5e05-a235-4020-bf62-5374685820fb",
 			"key": "token",
 			"value": "",
 			"type": "string"
