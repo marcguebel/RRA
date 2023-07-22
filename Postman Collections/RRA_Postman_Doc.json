@@ -466,7 +466,8 @@
 									"value": "64b964064f13cd607fb56b23"
 								}
 							]
-						}
+						},
+						"description": "Update one race"
 					},
 					"response": []
 				},
@@ -499,7 +500,8 @@
 									"value": "64b964064f13cd607fb56b23"
 								}
 							]
-						}
+						},
+						"description": "Delete one race"
 					},
 					"response": []
 				}
@@ -1052,13 +1054,13 @@
 	],
 	"variable": [
 		{
-			"id": "e8285239-b516-4622-84ed-835c281e1bf8",
+			"id": "b2910488-3743-424d-bcee-58f3dfc2a0a0",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a4462b27-4a39-4b77-bc09-c768701f34dc",
+			"id": "0879614d-8693-49c5-8f30-221eea35986a",
 			"key": "token",
 			"value": "",
 			"type": "string"
