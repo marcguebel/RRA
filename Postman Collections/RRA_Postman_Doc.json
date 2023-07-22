@@ -564,7 +564,86 @@
 						},
 						"description": "Return one race"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "9a991bf4-8106-47eb-8adc-ef9bf6434ed4",
+							"name": "Get One",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}races/:id",
+									"host": [
+										"{{base_url}}races"
+									],
+									"path": [
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64bbae69f24bbf438b7c5ab6"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-WlpjO1ZifGoDdN/zrdrWwPIAYXI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:25:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"_id\": \"64bbae69f24bbf438b7c5ab6\",\n    \"event\": \"64b963d34f13cd607fb56b1e\",\n    \"distance\": 10,\n    \"elevationGain\": 400,\n    \"type\": [\n        \"trail\"\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Update 🔒",
@@ -1362,13 +1441,13 @@
 	],
 	"variable": [
 		{
-			"id": "6995bfdd-86fa-468c-8165-3ee38c232c4d",
+			"id": "eec7f5a6-a043-4083-8bae-af9413ff0f97",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "ad670a2f-676b-4883-9012-cbb9424eb965",
+			"id": "c7c3b791-8cb9-441c-a640-95e87cbbbb2e",
 			"key": "token",
 			"value": "",
 			"type": "string"
