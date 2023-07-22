@@ -1224,13 +1224,13 @@
 	],
 	"variable": [
 		{
-			"id": "a688c190-5bda-408a-80d5-21838674e7de",
+			"id": "d5a29ff5-e4b8-4ca3-86b3-1090adaa0ab9",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "24326537-36a1-4680-a7df-aaba16537b0d",
+			"id": "e5efc8b1-5460-4dc8-bb33-0b156ed71f59",
 			"key": "token",
 			"value": "",
 			"type": "string"
