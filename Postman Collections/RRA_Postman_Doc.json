@@ -807,7 +807,73 @@
 						},
 						"description": "Delete one race"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "0990794d-9497-4198-868e-07fee30de08f",
+							"name": "Delete 🔒",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}races/:id",
+									"host": [
+										"{{base_url}}races"
+									],
+									"path": [
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64bbae69f24bbf438b7c5ab6"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:25:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				}
 			],
 			"id": "2d7048cd-ffeb-4ab2-a7ed-31050a28cfad",
@@ -1528,13 +1594,13 @@
 	],
 	"variable": [
 		{
-			"id": "a74a79fb-1064-408d-90ae-2ca990877b15",
+			"id": "340e6887-49d4-44a4-9bb3-670049f93f82",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c40e514a-ea41-4e28-98b9-5b1e8b7c9c56",
+			"id": "de40c910-2551-45ac-8b97-3bcbad9b3fe0",
 			"key": "token",
 			"value": "",
 			"type": "string"
