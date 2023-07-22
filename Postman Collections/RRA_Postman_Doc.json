@@ -367,8 +367,7 @@
 								}
 							}
 						},
-						"url": "{{base_url}}races/",
-						"description": "Add a race"
+						"url": "{{base_url}}races/"
 					},
 					"response": []
 				},
@@ -388,8 +387,7 @@
 								"disabled": true
 							}
 						],
-						"url": "{{base_url}}races/",
-						"description": "Return all races"
+						"url": "{{base_url}}races/"
 					},
 					"response": []
 				},
@@ -1051,13 +1049,13 @@
 	],
 	"variable": [
 		{
-			"id": "d0c11539-7091-4a53-91f2-859bdf501b62",
+			"id": "30e7b172-974c-4576-bdc5-02de210ff076",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3aa065c4-a3e6-4d3b-b835-4b5bf5513ae2",
+			"id": "205cb38b-b2d6-4d55-abd2-7e96f16db3bc",
 			"key": "token",
 			"value": "",
 			"type": "string"
