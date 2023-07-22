@@ -536,7 +536,8 @@
 								}
 							}
 						},
-						"url": "{{base_url}}events/"
+						"url": "{{base_url}}events/",
+						"description": "Add event"
 					},
 					"response": [
 						{
@@ -1054,13 +1055,13 @@
 	],
 	"variable": [
 		{
-			"id": "02466602-4b35-4d0e-926d-233bf4e8727c",
+			"id": "f5e39ce0-6e0e-464e-a743-88da7d548ef2",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "63c9edf4-98ee-456e-921f-4d737c629d93",
+			"id": "8bb853bc-c8c9-4115-bb18-b9bf1d7a1697",
 			"key": "token",
 			"value": "",
 			"type": "string"
