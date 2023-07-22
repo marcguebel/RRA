@@ -822,7 +822,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\" : \"name exemple\",\r\n    \"date\" : \"2023-01-01 10:00:00\",\r\n    \"country\" : \"fr\",\r\n    \"location\" : \"Nancy\",\r\n    \"longitude\" : 48.6921316006519,\r\n    \"latitude\" : 6.1848328787810445\r\n}",
+							"raw": "{\r\n    \"name\" : \"name exemple updated\",\r\n    \"date\" : \"2023-01-01 10:00:00\",\r\n    \"country\" : \"fr\",\r\n    \"location\" : \"Nancy\",\r\n    \"longitude\" : 48.6921316006519,\r\n    \"latitude\" : 6.1848328787810445\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -961,13 +961,13 @@
 	],
 	"variable": [
 		{
-			"id": "fd54a2c4-7c8e-4e4e-9c15-d658ed163bca",
+			"id": "b3c1a3bc-06a1-4817-9afc-fb8b5703e5f0",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8f8e0132-5ed1-4426-a093-ee140d6ed9a4",
+			"id": "b611e0c5-00cf-45b1-bd64-b8ea5d29e4cb",
 			"key": "token",
 			"value": "",
 			"type": "string"
