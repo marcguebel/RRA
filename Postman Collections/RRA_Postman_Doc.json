@@ -730,7 +730,8 @@
 									"value": "64bbaaebbebc8ceec5617a0f"
 								}
 							]
-						}
+						},
+						"description": "Return one event"
 					},
 					"response": [
 						{
@@ -1056,13 +1057,13 @@
 	],
 	"variable": [
 		{
-			"id": "04631149-6c29-412f-8e53-01f8c9cec6ab",
+			"id": "279209e3-da72-4b47-8ba0-d2ae210f79dc",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c737a1cd-523b-4c36-9856-c57ea3ac2399",
+			"id": "5f826330-76bf-4359-80ef-bc539734ca4c",
 			"key": "token",
 			"value": "",
 			"type": "string"
