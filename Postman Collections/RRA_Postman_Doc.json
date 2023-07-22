@@ -973,7 +973,8 @@
 									"value": "64bad319d9162cca563a4cdb"
 								}
 							]
-						}
+						},
+						"description": "Delete one event"
 					},
 					"response": []
 				},
@@ -1058,13 +1059,13 @@
 	],
 	"variable": [
 		{
-			"id": "ec3d7c50-fbfb-4a27-bde1-ddc577d75f01",
+			"id": "71a55cad-5619-437a-a15c-806cc79986ef",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "000f40a1-15bd-445f-ab6a-237cef7f39bd",
+			"id": "e8b9095b-9345-49dc-9b94-6917d259baac",
 			"key": "token",
 			"value": "",
 			"type": "string"
