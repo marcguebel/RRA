@@ -507,7 +507,7 @@
 			"name": "Event 👯‍♂️",
 			"item": [
 				{
-					"name": "Add",
+					"name": "Add 🔒",
 					"id": "34f1a418-8e5e-4584-8b26-f992570bb8ac",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -532,7 +532,80 @@
 						},
 						"url": "{{base_url}}events/"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "e18481b4-ca20-4220-9542-ba600a169039",
+							"name": "Add 🔒",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"name exemple\",\r\n    \"date\" : \"2023-01-01 10:00:00\",\r\n    \"country\" : \"fr\",\r\n    \"location\" : \"Nancy\",\r\n    \"longitude\" : 0,\r\n    \"latitude\" : 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}events/"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "151"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"97-X1+WmfPZUV7vG5/helfyhgYTd14\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:09:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"name\": \"name exemple\",\n    \"date\": \"2023-01-01T09:00:00.000Z\",\n    \"country\": \"fr\",\n    \"location\": \"Nancy\",\n    \"longitude\": 0,\n    \"latitude\": 0,\n    \"_id\": \"64bbaaebbebc8ceec5617a0f\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Get All",
@@ -546,7 +619,8 @@
 							{
 								"key": "Authorization",
 								"value": "Barer {{token}}",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": "{{base_url}}events/"
@@ -565,7 +639,8 @@
 							{
 								"key": "Authorization",
 								"value": "Barer {{token}}",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -587,7 +662,7 @@
 					"response": []
 				},
 				{
-					"name": "Update",
+					"name": "Update 🔒",
 					"id": "7e768c7e-7175-4de9-aced-3f00536d4de1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -629,7 +704,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete",
+					"name": "Delete 🔒",
 					"id": "b3d4355c-af2c-4166-b195-a8bbdbcbfc58",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -673,7 +748,8 @@
 							{
 								"key": "Authorization",
 								"value": "Barer {{token}}",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -741,13 +817,13 @@
 	],
 	"variable": [
 		{
-			"id": "9625e05c-2363-4b00-bb29-77d9e5bb8bfb",
+			"id": "8d769b71-1fa5-4988-80b1-5f48a0a01c3a",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2c19d3a0-0f71-494f-8a32-706231292d7c",
+			"id": "6f1e8afa-0880-4b90-befb-028e9c786a25",
 			"key": "token",
 			"value": "",
 			"type": "string"
