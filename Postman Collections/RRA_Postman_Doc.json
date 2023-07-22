@@ -558,7 +558,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b964064f13cd607fb56b23"
+									"value": "64b963d34f13cd607fb56b1e"
 								}
 							]
 						},
@@ -1362,13 +1362,13 @@
 	],
 	"variable": [
 		{
-			"id": "17aa54c7-a98b-4937-806d-a689d294741e",
+			"id": "733b8705-60a0-4ed3-96f3-1074e711f23b",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3708004b-1050-4f82-bb0d-fc76a2c01901",
+			"id": "72d2b0fa-5fe8-4f3f-9360-717865b82e45",
 			"key": "token",
 			"value": "",
 			"type": "string"
