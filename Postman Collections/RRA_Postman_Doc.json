@@ -1362,13 +1362,13 @@
 	],
 	"variable": [
 		{
-			"id": "6493e50d-1d8a-4f8b-b4d5-c3eeb342fcc4",
+			"id": "17aa54c7-a98b-4937-806d-a689d294741e",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5f7006c9-1398-450b-8509-6de418fbf938",
+			"id": "3708004b-1050-4f82-bb0d-fc76a2c01901",
 			"key": "token",
 			"value": "",
 			"type": "string"
