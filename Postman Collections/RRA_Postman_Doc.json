@@ -1528,13 +1528,13 @@
 	],
 	"variable": [
 		{
-			"id": "77a11f7d-3e09-4f60-b443-7a69dbd3c02a",
+			"id": "4353a3a6-2d8c-4c19-9d0f-1cfbc175fc5c",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8566e25a-2c5b-4e96-9f12-b0927dd30730",
+			"id": "d804bbbd-73a5-40c4-9027-aa943c5c2553",
 			"key": "token",
 			"value": "",
 			"type": "string"
