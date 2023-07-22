@@ -852,7 +852,8 @@
 									"value": "64bbaaebbebc8ceec5617a0f"
 								}
 							]
-						}
+						},
+						"description": "Update one event"
 					},
 					"response": [
 						{
@@ -969,12 +970,79 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64bad319d9162cca563a4cdb"
+									"value": "64bbaaebbebc8ceec5617a0f"
 								}
 							]
-						}
+						},
+						"description": "Delete one event"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "f0955dec-8dd3-4e4f-9ef8-161777fbb799",
+							"name": "Delete 🔒",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}events/:id",
+									"host": [
+										"{{base_url}}events"
+									],
+									"path": [
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64bbaaebbebc8ceec5617a0f"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:22:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": null
+						}
+					]
 				},
 				{
 					"name": "Search",
@@ -1025,7 +1093,8 @@
 									"disabled": true
 								}
 							]
-						}
+						},
+						"description": "Search event by name country or location"
 					},
 					"response": []
 				}
@@ -1057,13 +1126,13 @@
 	],
 	"variable": [
 		{
-			"id": "7c227a6a-bf8e-411c-aca4-6e323052ae1b",
+			"id": "ded026d1-98f1-48b8-b781-01c9df920083",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "32437d71-25f9-4b8e-b5d0-efd2207382b4",
+			"id": "6aa22dfa-9f59-459a-bbd0-a73d9f908561",
 			"key": "token",
 			"value": "",
 			"type": "string"
