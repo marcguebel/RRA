@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "Signup",
-					"_postman_id": "8dd3d1cd-549d-408d-97a0-f44e3b799d4b",
+					"id": "8dd3d1cd-549d-408d-97a0-f44e3b799d4b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -101,7 +101,7 @@
 				},
 				{
 					"name": "Login",
-					"_postman_id": "84ed14a6-f9fa-499e-ad5f-3063ffb9584a",
+					"id": "84ed14a6-f9fa-499e-ad5f-3063ffb9584a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -190,7 +190,7 @@
 					]
 				}
 			],
-			"_postman_id": "29855371-a074-4444-a9bf-35deb6806f18",
+			"id": "29855371-a074-4444-a9bf-35deb6806f18",
 			"description": "Use to get acces to API"
 		},
 		{
@@ -198,7 +198,7 @@
 			"item": [
 				{
 					"name": "Hello World",
-					"_postman_id": "668c3cd2-b938-4638-ba6f-a51a0e3cb3a8",
+					"id": "668c3cd2-b938-4638-ba6f-a51a0e3cb3a8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -262,7 +262,7 @@
 				},
 				{
 					"name": "Hello World Authentified🔒",
-					"_postman_id": "e72ebbd8-530d-40cb-86e5-1adec4ad1457",
+					"id": "e72ebbd8-530d-40cb-86e5-1adec4ad1457",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -337,7 +337,7 @@
 					]
 				}
 			],
-			"_postman_id": "f1209f10-f47f-4c8f-9485-bfe32579671b",
+			"id": "f1209f10-f47f-4c8f-9485-bfe32579671b",
 			"description": "Simple first test"
 		},
 		{
@@ -345,7 +345,7 @@
 			"item": [
 				{
 					"name": "Add 🔒",
-					"_postman_id": "9dd5565c-6d26-404d-93c6-dc891331f3da",
+					"id": "9dd5565c-6d26-404d-93c6-dc891331f3da",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -373,7 +373,7 @@
 				},
 				{
 					"name": "Get All",
-					"_postman_id": "6145caf3-3d0b-43fc-b94a-869f03106fb2",
+					"id": "6145caf3-3d0b-43fc-b94a-869f03106fb2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -393,7 +393,7 @@
 				},
 				{
 					"name": "Get One",
-					"_postman_id": "93fbf040-24e4-45c6-b252-0c47491c4594",
+					"id": "93fbf040-24e4-45c6-b252-0c47491c4594",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -418,8 +418,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b964064f13cd607fb56b23",
-									"type": "string"
+									"value": "64b964064f13cd607fb56b23"
 								}
 							]
 						}
@@ -428,7 +427,7 @@
 				},
 				{
 					"name": "Update 🔒",
-					"_postman_id": "8b7475a9-e012-4c3a-9410-ae5d433f031a",
+					"id": "8b7475a9-e012-4c3a-9410-ae5d433f031a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -461,8 +460,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b964064f13cd607fb56b23",
-									"type": "string"
+									"value": "64b964064f13cd607fb56b23"
 								}
 							]
 						}
@@ -471,7 +469,7 @@
 				},
 				{
 					"name": "Delete 🔒",
-					"_postman_id": "a84620e6-2405-43a4-b5e0-24f33ca5eb13",
+					"id": "a84620e6-2405-43a4-b5e0-24f33ca5eb13",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -495,8 +493,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b964064f13cd607fb56b23",
-									"type": "string"
+									"value": "64b964064f13cd607fb56b23"
 								}
 							]
 						}
@@ -504,14 +501,14 @@
 					"response": []
 				}
 			],
-			"_postman_id": "2d7048cd-ffeb-4ab2-a7ed-31050a28cfad"
+			"id": "2d7048cd-ffeb-4ab2-a7ed-31050a28cfad"
 		},
 		{
-			"name": "Event",
+			"name": "Event 👯‍♂️",
 			"item": [
 				{
-					"name": "Add",
-					"_postman_id": "34f1a418-8e5e-4584-8b26-f992570bb8ac",
+					"name": "Add 🔒",
+					"id": "34f1a418-8e5e-4584-8b26-f992570bb8ac",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -539,7 +536,7 @@
 				},
 				{
 					"name": "Get All",
-					"_postman_id": "a27c11eb-cc02-450b-9ccf-d134b7ec519b",
+					"id": "a27c11eb-cc02-450b-9ccf-d134b7ec519b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -558,7 +555,7 @@
 				},
 				{
 					"name": "Get One",
-					"_postman_id": "183e0081-d0b2-4df4-8b8b-11286109ce74",
+					"id": "183e0081-d0b2-4df4-8b8b-11286109ce74",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -582,8 +579,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b962c7cd442a75e5d0b3a0",
-									"type": "string"
+									"value": "64b962c7cd442a75e5d0b3a0"
 								}
 							]
 						}
@@ -592,7 +588,7 @@
 				},
 				{
 					"name": "Update",
-					"_postman_id": "7e768c7e-7175-4de9-aced-3f00536d4de1",
+					"id": "7e768c7e-7175-4de9-aced-3f00536d4de1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -625,8 +621,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b963d34f13cd607fb56b1e",
-									"type": "string"
+									"value": "64b963d34f13cd607fb56b1e"
 								}
 							]
 						}
@@ -635,7 +630,7 @@
 				},
 				{
 					"name": "Delete",
-					"_postman_id": "b3d4355c-af2c-4166-b195-a8bbdbcbfc58",
+					"id": "b3d4355c-af2c-4166-b195-a8bbdbcbfc58",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -659,8 +654,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b963d34f13cd607fb56b1e",
-									"type": "string"
+									"value": "64b963d34f13cd607fb56b1e"
 								}
 							]
 						}
@@ -669,7 +663,7 @@
 				},
 				{
 					"name": "Search",
-					"_postman_id": "0c617997-7b9d-402e-8f53-9e2efdad76f1",
+					"id": "0c617997-7b9d-402e-8f53-9e2efdad76f1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -720,7 +714,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "efcd51f9-e490-4d9a-9275-8705149b06cb"
+			"id": "efcd51f9-e490-4d9a-9275-8705149b06cb"
 		}
 	],
 	"event": [
@@ -747,13 +741,13 @@
 	],
 	"variable": [
 		{
-			"id": "b5a2394f-43b3-45ad-aa80-20b664fc07c7",
+			"id": "40e64a52-5f50-4f3c-a1c7-a3a2cf18f97b",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "a7ff5fc5-da26-465e-8fa9-77ac3758a53d",
+			"id": "13737ded-8e0d-4c3d-adfb-50fc56e4a874",
 			"key": "token",
 			"value": "",
 			"type": "string"
