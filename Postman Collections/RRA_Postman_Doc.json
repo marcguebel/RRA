@@ -1568,7 +1568,7 @@
 				}
 			],
 			"id": "efcd51f9-e490-4d9a-9275-8705149b06cb",
-			"description": "Crud for event"
+			"description": "Crud for event\n\nA Event can have multiples Races"
 		}
 	],
 	"event": [
@@ -1595,13 +1595,13 @@
 	],
 	"variable": [
 		{
-			"id": "65440df7-665b-4efc-87ff-c4d2937244d0",
+			"id": "bb9f50b2-d673-4f19-b952-942d10885ed9",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "60be4b38-7896-4c58-98cf-ecbe01adb86c",
+			"id": "14c8aec2-6aec-456c-b23f-38c6de8eab43",
 			"key": "token",
 			"value": "",
 			"type": "string"
