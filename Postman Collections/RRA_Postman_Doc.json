@@ -507,7 +507,7 @@
 			"name": "Event 👯‍♂️",
 			"item": [
 				{
-					"name": "Add 🔒",
+					"name": "Add",
 					"id": "34f1a418-8e5e-4584-8b26-f992570bb8ac",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -546,8 +546,7 @@
 							{
 								"key": "Authorization",
 								"value": "Barer {{token}}",
-								"type": "text",
-								"disabled": true
+								"type": "text"
 							}
 						],
 						"url": "{{base_url}}events/"
@@ -566,8 +565,7 @@
 							{
 								"key": "Authorization",
 								"value": "Barer {{token}}",
-								"type": "text",
-								"disabled": true
+								"type": "text"
 							}
 						],
 						"url": {
@@ -589,7 +587,7 @@
 					"response": []
 				},
 				{
-					"name": "Update 🔒",
+					"name": "Update",
 					"id": "7e768c7e-7175-4de9-aced-3f00536d4de1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -631,7 +629,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete 🔒",
+					"name": "Delete",
 					"id": "b3d4355c-af2c-4166-b195-a8bbdbcbfc58",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -675,8 +673,7 @@
 							{
 								"key": "Authorization",
 								"value": "Barer {{token}}",
-								"type": "text",
-								"disabled": true
+								"type": "text"
 							}
 						],
 						"url": {
@@ -744,13 +741,13 @@
 	],
 	"variable": [
 		{
-			"id": "1cefb662-fd08-426c-bea7-53ae2ab699ab",
+			"id": "9625e05c-2363-4b00-bb29-77d9e5bb8bfb",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "c175e70a-d6ce-4e74-a745-ae41973787bb",
+			"id": "2c19d3a0-0f71-494f-8a32-706231292d7c",
 			"key": "token",
 			"value": "",
 			"type": "string"
