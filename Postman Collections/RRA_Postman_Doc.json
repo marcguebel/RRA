@@ -466,8 +466,7 @@
 									"value": "64b964064f13cd607fb56b23"
 								}
 							]
-						},
-						"description": "Update one race"
+						}
 					},
 					"response": []
 				},
@@ -500,8 +499,7 @@
 									"value": "64b964064f13cd607fb56b23"
 								}
 							]
-						},
-						"description": "Delete one race"
+						}
 					},
 					"response": []
 				}
@@ -536,8 +534,7 @@
 								}
 							}
 						},
-						"url": "{{base_url}}events/",
-						"description": "Add a event"
+						"url": "{{base_url}}events/"
 					},
 					"response": [
 						{
@@ -630,8 +627,7 @@
 								"disabled": true
 							}
 						],
-						"url": "{{base_url}}events/",
-						"description": "Return all events"
+						"url": "{{base_url}}events/"
 					},
 					"response": [
 						{
@@ -730,8 +726,7 @@
 									"value": "64bbaaebbebc8ceec5617a0f"
 								}
 							]
-						},
-						"description": "Return one event"
+						}
 					},
 					"response": [
 						{
@@ -852,8 +847,7 @@
 									"value": "64bbaaebbebc8ceec5617a0f"
 								}
 							]
-						},
-						"description": "Update one event"
+						}
 					},
 					"response": [
 						{
@@ -973,8 +967,7 @@
 									"value": "64bad319d9162cca563a4cdb"
 								}
 							]
-						},
-						"description": "Delete one event"
+						}
 					},
 					"response": []
 				},
@@ -1027,8 +1020,7 @@
 									"disabled": true
 								}
 							]
-						},
-						"description": "Search event by name country or location"
+						}
 					},
 					"response": []
 				}
@@ -1060,13 +1052,13 @@
 	],
 	"variable": [
 		{
-			"id": "2b65ef97-4e92-4b4f-9a0f-2d534157b838",
+			"id": "e8285239-b516-4622-84ed-835c281e1bf8",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cd773634-b572-401f-9250-4af3d4f269ac",
+			"id": "a4462b27-4a39-4b77-bc09-c768701f34dc",
 			"key": "token",
 			"value": "",
 			"type": "string"
