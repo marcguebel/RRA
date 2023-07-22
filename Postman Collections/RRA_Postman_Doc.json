@@ -466,7 +466,8 @@
 									"value": "64b964064f13cd607fb56b23"
 								}
 							]
-						}
+						},
+						"description": "Update one race"
 					},
 					"response": []
 				},
@@ -1052,13 +1053,13 @@
 	],
 	"variable": [
 		{
-			"id": "5739d00a-afcb-470f-986d-dce2322cb911",
+			"id": "239908d1-6b23-4fbf-863c-65c808d2dd97",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9cc1cb08-e4c9-4722-9aec-5d3bcff10f2f",
+			"id": "1f93a98e-aad2-4ede-9209-b255f6593ad6",
 			"key": "token",
 			"value": "",
 			"type": "string"
