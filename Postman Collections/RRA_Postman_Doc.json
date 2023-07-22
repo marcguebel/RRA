@@ -629,7 +629,7 @@
 					"response": []
 				},
 				{
-					"name": "Delete",
+					"name": "Delete 🔒",
 					"id": "b3d4355c-af2c-4166-b195-a8bbdbcbfc58",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -741,13 +741,13 @@
 	],
 	"variable": [
 		{
-			"id": "e411b5b1-8d74-4af8-b363-0794485ce345",
+			"id": "15c9d98b-ae5a-448f-b5c2-a90e06e37923",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "d0c48858-feaf-48d5-909f-f0fa1abead74",
+			"id": "e3c56659-bd0a-4607-a78e-7fb4d3b15481",
 			"key": "token",
 			"value": "",
 			"type": "string"
