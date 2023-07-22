@@ -464,7 +464,72 @@
 						"url": "{{base_url}}races/",
 						"description": "Return all races"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "8a1e3183-305a-4002-bffa-fbd56ab1e211",
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": "{{base_url}}races/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-Eiz1NV5KxJRCumZPAPhnYhsRgjQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:24:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"_id\": \"64bbae69f24bbf438b7c5ab6\",\n        \"event\": \"64b963d34f13cd607fb56b1e\",\n        \"distance\": 10,\n        \"elevationGain\": 400,\n        \"type\": [\n            \"trail\"\n        ]\n    }\n]"
+						}
+					]
 				},
 				{
 					"name": "Get One",
@@ -1297,13 +1362,13 @@
 	],
 	"variable": [
 		{
-			"id": "5a503a4e-40da-41d3-9d59-e16a97b8965d",
+			"id": "6493e50d-1d8a-4f8b-b4d5-c3eeb342fcc4",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6d095a3b-9289-4fee-af5c-41500d711373",
+			"id": "5f7006c9-1398-450b-8509-6de418fbf938",
 			"key": "token",
 			"value": "",
 			"type": "string"
