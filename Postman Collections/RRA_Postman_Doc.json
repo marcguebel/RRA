@@ -877,7 +877,7 @@
 				}
 			],
 			"id": "2d7048cd-ffeb-4ab2-a7ed-31050a28cfad",
-			"description": "CRUD for race\n\nA Event can have multiples Races"
+			"description": "CRUD for Race\n\nA Event can have multiples Races"
 		},
 		{
 			"name": "Event 👯‍♂️",
@@ -1568,7 +1568,7 @@
 				}
 			],
 			"id": "efcd51f9-e490-4d9a-9275-8705149b06cb",
-			"description": "Crud for event\n\nA Event can have multiples Races"
+			"description": "Crud for event"
 		}
 	],
 	"event": [
@@ -1595,13 +1595,13 @@
 	],
 	"variable": [
 		{
-			"id": "bb9f50b2-d673-4f19-b952-942d10885ed9",
+			"id": "9a3fb724-b037-4db0-b6cf-44023ded5a7c",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "14c8aec2-6aec-456c-b23f-38c6de8eab43",
+			"id": "cac0a6da-49ca-4d83-a685-8de951cba5f3",
 			"key": "token",
 			"value": "",
 			"type": "string"
