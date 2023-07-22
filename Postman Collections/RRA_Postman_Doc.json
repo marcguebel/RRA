@@ -724,7 +724,86 @@
 							]
 						}
 					},
-					"response": []
+					"response": [
+						{
+							"id": "38b65e77-1bb6-4dbe-bc62-0e2d24f5fa9f",
+							"name": "Get One",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}events/:id",
+									"host": [
+										"{{base_url}}events"
+									],
+									"path": [
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "64bbaaebbebc8ceec5617a0f"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "151"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"97-dM5wld0mbQaCbOzqMeSDol3A9Jw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:12:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"_id\": \"64bbaaebbebc8ceec5617a0f\",\n    \"name\": \"name exemple\",\n    \"date\": \"2023-01-01T09:00:00.000Z\",\n    \"country\": \"fr\",\n    \"location\": \"Nancy\",\n    \"longitude\": 0,\n    \"latitude\": 0\n}"
+						}
+					]
 				},
 				{
 					"name": "Update 🔒",
@@ -882,13 +961,13 @@
 	],
 	"variable": [
 		{
-			"id": "0dcd3eff-42ae-42da-b0ce-086739f55d2a",
+			"id": "98e53a52-a199-414a-b805-4136e0e1daef",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9b10c366-82ea-4445-9b79-75541f6f6203",
+			"id": "54d8e76e-51a5-450e-9dda-40233053acc3",
 			"key": "token",
 			"value": "",
 			"type": "string"
