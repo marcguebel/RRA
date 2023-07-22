@@ -546,7 +546,8 @@
 							{
 								"key": "Authorization",
 								"value": "Barer {{token}}",
-								"type": "text"
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": "{{base_url}}events/"
@@ -743,13 +744,13 @@
 	],
 	"variable": [
 		{
-			"id": "1824541d-c90e-4028-9c36-8e80bacfe6d0",
+			"id": "1cefb662-fd08-426c-bea7-53ae2ab699ab",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "8bfc0bb3-3e9f-4c13-8caf-227341d8e1df",
+			"id": "c175e70a-d6ce-4e74-a745-ae41973787bb",
 			"key": "token",
 			"value": "",
 			"type": "string"
