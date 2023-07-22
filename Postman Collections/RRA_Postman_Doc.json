@@ -1096,7 +1096,105 @@
 						},
 						"description": "Search event by name country or location"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "3e106d75-43b8-4888-8b81-1e38a1d8835d",
+							"name": "Search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}events/search?name=`name Exemp`&country='fr'&location=nancy",
+									"host": [
+										"{{base_url}}events"
+									],
+									"path": [
+										"search"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "`name Exemp`"
+										},
+										{
+											"key": "date",
+											"value": "2023-01-01T09:00:00.000Z",
+											"disabled": true
+										},
+										{
+											"key": "country",
+											"value": "'fr'"
+										},
+										{
+											"key": "location",
+											"value": "nancy"
+										},
+										{
+											"key": "longitude",
+											"value": "0",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "153"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"99-cVV1GeUJ58asVe7+AZ4s3Yxfo0Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:23:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"_id\": \"64bbadfdf1472ab992b1868d\",\n        \"name\": \"name exemple\",\n        \"date\": \"2023-01-01T09:00:00.000Z\",\n        \"country\": \"fr\",\n        \"location\": \"Nancy\",\n        \"longitude\": 0,\n        \"latitude\": 0\n    }\n]"
+						}
+					]
 				}
 			],
 			"id": "efcd51f9-e490-4d9a-9275-8705149b06cb"
@@ -1126,13 +1224,13 @@
 	],
 	"variable": [
 		{
-			"id": "3cb7aa3f-c367-4ba6-b9e9-64806b4f8066",
+			"id": "a688c190-5bda-408a-80d5-21838674e7de",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5fa82280-e76c-4d98-a85a-754506e1669e",
+			"id": "24326537-36a1-4680-a7df-aaba16537b0d",
 			"key": "token",
 			"value": "",
 			"type": "string"
