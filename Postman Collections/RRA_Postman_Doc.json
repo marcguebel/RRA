@@ -625,7 +625,72 @@
 						],
 						"url": "{{base_url}}events/"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "ca4bb518-cab7-4956-a032-3f1fb3e2460c",
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": "{{base_url}}events/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "153"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"99-n2FN71gLPniuvFUxpMCFSrsx4BU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:11:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"_id\": \"64bbaaebbebc8ceec5617a0f\",\n        \"name\": \"name exemple\",\n        \"date\": \"2023-01-01T09:00:00.000Z\",\n        \"country\": \"fr\",\n        \"location\": \"Nancy\",\n        \"longitude\": 0,\n        \"latitude\": 0\n    }\n]"
+						}
+					]
 				},
 				{
 					"name": "Get One",
@@ -729,7 +794,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "64b963d34f13cd607fb56b1e"
+									"value": "64bad319d9162cca563a4cdb"
 								}
 							]
 						}
@@ -817,13 +882,13 @@
 	],
 	"variable": [
 		{
-			"id": "7dd2f2ff-ad09-4de4-89e0-098e626c6763",
+			"id": "925181f0-8c80-4bec-9f18-67ed9badc8a0",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "79073d27-fa36-4ad1-8eef-bd858531f1cd",
+			"id": "74e82dc9-b129-466f-b53e-16b9b8bb86cc",
 			"key": "token",
 			"value": "",
 			"type": "string"
