@@ -370,7 +370,80 @@
 						"url": "{{base_url}}races/",
 						"description": "Add a race"
 					},
-					"response": []
+					"response": [
+						{
+							"id": "b3aac2ad-2a42-424d-be5b-ed4be6e38608",
+							"name": "Add 🔒",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Barer {{token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"event\" : \"64b963d34f13cd607fb56b1e\",\r\n    \"distance\" : \"10\",\r\n    \"elevationGain\" : 400,\r\n    \"type\" : \"trail\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}races/"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "120"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"78-fJyucatBp73WHTGXwCNE5h/E88Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 22 Jul 2023 10:24:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"event\": \"64b963d34f13cd607fb56b1e\",\n    \"distance\": 10,\n    \"elevationGain\": 400,\n    \"type\": [\n        \"trail\"\n    ],\n    \"_id\": \"64bbae69f24bbf438b7c5ab6\"\n}"
+						}
+					]
 				},
 				{
 					"name": "Get All",
@@ -1224,13 +1297,13 @@
 	],
 	"variable": [
 		{
-			"id": "d5a29ff5-e4b8-4ca3-86b3-1090adaa0ab9",
+			"id": "c8513f8d-90ba-4236-b8cf-baf49bead12f",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "e5efc8b1-5460-4dc8-bb33-0b156ed71f59",
+			"id": "60195980-e1a9-45a9-8fe4-d0dde47cb49e",
 			"key": "token",
 			"value": "",
 			"type": "string"
