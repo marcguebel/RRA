@@ -1126,13 +1126,13 @@
 	],
 	"variable": [
 		{
-			"id": "ded026d1-98f1-48b8-b781-01c9df920083",
+			"id": "3cb7aa3f-c367-4ba6-b9e9-64806b4f8066",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6aa22dfa-9f59-459a-bbd0-a73d9f908561",
+			"id": "5fa82280-e76c-4d98-a85a-754506e1669e",
 			"key": "token",
 			"value": "",
 			"type": "string"
