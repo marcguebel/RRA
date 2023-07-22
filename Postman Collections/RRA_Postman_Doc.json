@@ -817,13 +817,13 @@
 	],
 	"variable": [
 		{
-			"id": "8d769b71-1fa5-4988-80b1-5f48a0a01c3a",
+			"id": "7dd2f2ff-ad09-4de4-89e0-098e626c6763",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "6f1e8afa-0880-4b90-befb-028e9c786a25",
+			"id": "79073d27-fa36-4ad1-8eef-bd858531f1cd",
 			"key": "token",
 			"value": "",
 			"type": "string"
