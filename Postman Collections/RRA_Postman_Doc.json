@@ -1027,7 +1027,8 @@
 									"disabled": true
 								}
 							]
-						}
+						},
+						"description": "Search event by name country or location"
 					},
 					"response": []
 				}
@@ -1059,13 +1060,13 @@
 	],
 	"variable": [
 		{
-			"id": "0089e0c2-a8e1-4e2a-ab81-761fa6842c3e",
+			"id": "2b65ef97-4e92-4b4f-9a0f-2d534157b838",
 			"key": "base_url",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "5ce9eb72-18ab-4a5b-88ac-8f5ee11f0ecb",
+			"id": "cd773634-b572-401f-9250-4af3d4f269ac",
 			"key": "token",
 			"value": "",
 			"type": "string"
