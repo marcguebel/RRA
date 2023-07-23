@@ -3,7 +3,7 @@ const Tool = require('./tool');
 
 exports.getAll = (req, res, next) => {
     try{
-        Race.find()
+        Race.find().limit(req.pagination.limit).skip(req.pagination.offset)
             .then(races => res.status(200).json(races))
             .catch(error => res.status(404).json({ error : error.message }));
     } catch(error) {
@@ -69,7 +69,7 @@ exports.search = (req, res, next) => {
             filter.type = new RegExp(decodeURIComponent(Tool.cleanParameter(type)), 'i');
         }
  
-        Race.find(filter)
+        Race.find(filter).limit(req.pagination.limit).skip(req.pagination.offset)
             .then(races => res.status(200).json(races))
             .catch(error => res.status(404).json({ error : error.message }));
     } catch(error) {

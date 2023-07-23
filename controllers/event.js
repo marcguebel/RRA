@@ -3,7 +3,7 @@ const Tool = require('./tool');
 
 exports.getAll = (req, res, next) => {
     try{
-        Event.find()
+        Event.find().limit(req.pagination.limit).skip(req.pagination.offset)
              .then(event => res.status(200).json(event))
              .catch(error => res.status(404).json({ error : error.message }));
     } catch(error) {
@@ -69,7 +69,7 @@ exports.search = (req, res, next) => {
             filter.location = new RegExp(decodeURIComponent(Tool.cleanParameter(location)), 'i');
         }
  
-        Event.find(filter)
+        Event.find(filter).limit(req.pagination.limit).skip(req.pagination.offset)
              .then(events => res.status(200).json(events))
              .catch(error => res.status(404).json({ error : error.message }));
     } catch(error) {
