@@ -1,8 +1,24 @@
 # Run Race Api
 
-## Configuration
-### skip env file 
-`git update-index --assume-unchanged environment.js`
+A public api listing the running races
 
-### start server
-`nodemon server`
+## Configuration
+
+Skip the environment file : 
+```
+git update-index --assume-unchanged environment.js
+```
+
+Start server : 
+
+```
+nodemon server
+```
+
+## Help 
+
+- [Postman documentation](https://documenter.getpostman.com/view/6918934/2s946fdXme)
+
+## Credits
+
+Guebel Marc [@twitter](https://twitter.com/guebelmarc1) / [@github](https://github.com/marcguebel)
