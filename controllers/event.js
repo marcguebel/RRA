@@ -1,5 +1,5 @@
 const Event = require('../models/Event');  
-const express = require('express');
+const Tool = require('./tool');  
 
 exports.getAll = (req, res, next) => {
     try{
@@ -56,17 +56,17 @@ exports.delete = (req, res, next) => {
 
 exports.search = (req, res, next) => {
     try{
-        const { name, date, country, location } = req.query;
+        const { name, country, location } = req.query;
         const filter = {};
       
         if (name) {
-            filter.name = new RegExp(decodeURIComponent(cleanParameter(name)), 'i');
+            filter.name = new RegExp(decodeURIComponent(Tool.cleanParameter(name)), 'i');
         }
         if (country) {
-            filter.country = new RegExp(decodeURIComponent(cleanParameter(country)), 'i');
+            filter.country = new RegExp(decodeURIComponent(Tool.cleanParameter(country)), 'i');
         }
         if (location) {
-            filter.location = new RegExp(decodeURIComponent(cleanParameter(location)), 'i');
+            filter.location = new RegExp(decodeURIComponent(Tool.cleanParameter(location)), 'i');
         }
  
         Event.find(filter)
@@ -76,10 +76,3 @@ exports.search = (req, res, next) => {
         res.status(401).json({ error : error.message});
     }
 } 
-
-// Eliminate quotes, apostrophes or backticks at the beginning and end of the string
-function cleanParameter(param) {
-    if (!param) 
-        return '';
-    return param.replace(/^['"`]|['"`]$/g, '');
-}

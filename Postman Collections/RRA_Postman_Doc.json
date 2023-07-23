@@ -819,6 +819,116 @@
 							"body": null
 						}
 					]
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}races/search?distance=10&elevationGain=400&type=trail",
+							"host": [
+								"{{base_url}}races"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "distance",
+									"value": "10"
+								},
+								{
+									"key": "elevationGain",
+									"value": "400"
+								},
+								{
+									"key": "type",
+									"value": "trail"
+								}
+							]
+						},
+						"description": "Search event by distance, elevationGain or type"
+					},
+					"response": [
+						{
+							"name": "Search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}races/search?distance=10&elevationGain=400&type=trail",
+									"host": [
+										"{{base_url}}races"
+									],
+									"path": [
+										"search"
+									],
+									"query": [
+										{
+											"key": "distance",
+											"value": "10"
+										},
+										{
+											"key": "elevationGain",
+											"value": "400"
+										},
+										{
+											"key": "type",
+											"value": "trail"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, X-Requested-With, Content, Accept, Content-Type, Authorization"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, PUT, DELETE, PATCH, OPTIONS"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-FXojomy+EHPuJ4lMZMvVugYk92I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 23 Jul 2023 06:21:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"64bcc1416d85d9e13d3c8252\",\n        \"event\": \"64bbadfdf1472ab992b1868d\",\n        \"distance\": 10,\n        \"elevationGain\": 400,\n        \"type\": [\n            \"trail\"\n        ]\n    }\n]"
+						}
+					]
 				}
 			],
 			"description": "CRUD for race\n\nA Event can have multiples Races"
